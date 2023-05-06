@@ -1,0 +1,86 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+class Dragon//武士1
+{
+public:
+	Dragon(int num,int HP,int AP) :num(num),
+		HP(HP),AP(AP){};
+	int dragonNum()
+	{
+		return num;
+	}
+private:
+	int num;//编号
+	int HP;//生命值
+	int AP;//攻击力
+};
+
+class Ninja//武士2
+{
+public:
+	Ninja(int num, int HP, int AP) :num(num),
+		HP(HP), AP(AP) {};
+private:
+	int num;//编号
+	int HP;//生命值
+	int AP;//攻击力
+};
+
+class Iceman//武士3
+{
+public:
+	Iceman(int num, int HP, int AP) :num(num),
+		HP(HP), AP(AP) {};
+private:
+	int num;//编号
+	int HP;//生命值
+	int AP;//攻击力
+};
+
+class Lion//武士4
+{
+public:
+	Lion(int num, int HP, int AP) :num(num),
+		HP(HP), AP(AP) {};
+private:
+	int num;//编号
+	int HP;//生命值
+	int AP;//攻击力
+};
+
+class Wolf//武士5
+{
+public:
+	Wolf(int num, int HP, int AP) :num(num),
+		HP(HP), AP(AP) {};
+private:
+	int num;//编号
+	int HP;//生命值
+	int AP;//攻击力
+};
+
+class Red
+{
+public:
+	void reduceM(int n)
+	{
+		M = M - n;
+	}
+	int dargonNum=0;
+	int ninjaNum=0;
+	int icemanNum=0;
+	int lionNum=0;
+	int wolfNum=0;
+private:
+	Dragon dragon[50];
+	Ninja ninja[50];
+	Iceman iceman[50];
+	Lion lion[50];
+	Wolf wolf[50];
+	int M;//司令部中的生命元
+};
+
+//红方司令部按照 iceman、lion、wolf、ninja、dragon 的顺序循环制造武士。
+//蓝方司令部按照 lion、dragon、ninja、iceman、wolf 的顺序循环制造武士。
